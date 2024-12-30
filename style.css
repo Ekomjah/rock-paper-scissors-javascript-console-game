@@ -9,7 +9,7 @@ body{
 
 
 main{
-    margin: 2em auto;
+    margin: 8vw auto;
     background-color: rgba(245, 245, 245, 0.404);
     padding: 1em;
     border-radius: 20px;
@@ -24,10 +24,12 @@ h1{
 h1, p{
     font-size: 1rem;
 }
+
+
 footer{
     text-align: right;
     font-family: monospace;
-    margin-top: 22vw;
+    margin-top: 18vw;
 }
 
 @media (max-width : 500px){
