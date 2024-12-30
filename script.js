@@ -2,6 +2,7 @@ function getHumanChoice(){
     let thechoice = prompt('What are You? Rock? Paper?? Scissors???').toLowerCase()
     if (thechoice === 'rock' || thechoice === 'paper' || thechoice === 'scissors') {
         console.log( 'You are '+ thechoice + '' );
+        alert( 'You are '+ thechoice + '' );
         return thechoice;
     }
     else if (thechoice === '') {
@@ -28,6 +29,7 @@ let theChoice;
         theChoice = 'Scissors'
     }
     console.log( 'Computer is '+ theChoice +'')
+    alert( 'Computer is '+ theChoice +'')
     return theChoice
 }
 
