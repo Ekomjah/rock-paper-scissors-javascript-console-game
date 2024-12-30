@@ -29,7 +29,7 @@ let theChoice;
     }
     console.log( 'Computer is '+ theChoice +'')
     alert( 'Computer is '+ theChoice +'')
-    return theChoice
+    return theChoice.toUpperCase();
 }
 
 
