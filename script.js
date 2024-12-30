@@ -2,7 +2,7 @@ function getHumanChoice(){
     let thechoice = prompt('What are You? Rock? Paper?? Scissors???').toLowerCase()
     if (thechoice === 'rock' || thechoice === 'paper' || thechoice === 'scissors') {
         console.log( 'You are '+ thechoice + '' );
-        return thechoice;
+        return thechoice.toUpperCase();
     }
     else if (thechoice === '') {
         alert('You don\'t know you? Ha!');
@@ -43,8 +43,8 @@ let computerScore = 0;
 // // console.log( `Computer is ${computerSelection}`)
 
 function playRound(humanChoice , computerChoice) {
- humanChoice = humanChoice.toLowerCase();
-computerChoice = computerChoice.toLowerCase();
+ humanChoice = humanChoice.toUpperCase();
+computerChoice = computerChoice.toUpperCase();
 
     if (humanChoice == computerChoice){
         computerScore++ ;
@@ -58,19 +58,20 @@ computerChoice = computerChoice.toLowerCase();
              (humanChoice === 'paper' && computerChoice === 'rock') ){
                 humanScore++;
         alert('You win!!  '+ humanChoice +' defeats '+ computerChoice +' ' );
-        console.log('You win!!  '+ humanChoice +' defeats '+ computerChoice +' ') ;
+        console.log('You win!! '+ humanChoice +' defeats '+ computerChoice +' ') ;
     }
 
     else if (!( (humanChoice === 'rock' && computerChoice === 'scissors') ||
     (humanChoice === 'scissors' && computerChoice === 'paper') || 
     (humanChoice === 'paper' && computerChoice === 'rock') )) {
         computerScore++;      
-         alert('You lost!!  '+ computerChoice +' beats you, '+ humanChoice +' ' );         
-        console.log('You lost!!  '+ computerChoice +' beats you,  '+ humanChoice +' ') ;
+         alert('You lost!! '+ computerChoice +' beats you, '+ humanChoice +' ' );         
+        console.log('You lost!!  '+ computerChoice +' beats you, '+ humanChoice +' ') ;
     }
 
         // Display scores after each round
         console.log(`Score - You: ${humanScore}, Computer: ${computerScore}`);
+        alert(`Score - You: ${humanScore}, Computer: ${computerScore}`);
 }
 
 let result;
@@ -107,5 +108,4 @@ let result;
  }
 
 playGame()
-
 
