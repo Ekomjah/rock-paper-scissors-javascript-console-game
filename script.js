@@ -44,8 +44,8 @@ let computerScore = 0;
 // // console.log( `Computer is ${computerSelection}`)
 
 function playRound(humanChoice , computerChoice) {
- humanChoice = humanChoice.toUpperCase();
-computerChoice = computerChoice.toUpperCase();
+ humanChoice = humanChoice.toLowerCase();
+computerChoice = computerChoice.toLowerCase();
 
     if (humanChoice == computerChoice){
         computerScore++ ;
